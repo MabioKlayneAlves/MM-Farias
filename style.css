@@ -1,0 +1,156 @@
+/* Fonte e estilo do nome da empresa */
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #6782fc;
+    margin-right: auto;
+    padding: 10px 20px;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #6782fc;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    transition: border-color 0.3s ease;
+    outline: none;
+    margin: 10px 0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #6782fc;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #6782fc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -4px 6px rgba(54, 62, 180, 0.596);
+}
+
+/* Estilo do carrossel */
+#carrossel {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.slick-slider {
+    margin-top: 20px;
+}
+
+.slick-slide {
+    margin: 0 10px; /* Espaçamento entre as imagens */
+}
+
+.slick-slide img {
+    width: 100%; /* Ajuste a largura da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo do container para o carrossel e a tela de login */
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Estilo da tela de login e registro */
+#auth {
+    background: url('caminhao-background.png') no-repeat center center/cover;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth-form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.auth-form.active {
+    transform: translateX(-100%);
+}
+
+.auth-form.login-form {
+    display: block;
+}
+
+.auth-form.register-form {
+    display: none;
+}
+
+.auth-form.active.register-form {
+    display: block;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.auth-form button {
+    background-color: #6782fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+   }

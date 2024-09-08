@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Caminhões</title>
+    <!-- Fonte e estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            M.M.Farias
+        </div>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i> Sobre</a></li>
+        </ul>
+        <form>
+            <input type="text" placeholder="Pesquisar...">
+        </form>
+    </nav>
+
+    <section id="carrossel">
+        <h2>Galeria de Caminhões</h2>
+        <div class="slick-slider">
+            <div><img src="caminhao1.png" alt="Caminhão 1"></div>
+            <div><img src="caminhao2.png" alt="Caminhão 2"></div>
+            <div><img src="caminhao3.png" alt="Caminhão 3"></div>
+            <div><img src="caminhao4.png" alt="Caminhão 4"></div>
+            <div><img src="caminhao5.png" alt="Caminhão 5"></div>
+            <!-- Adicione mais imagens de caminhões -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 M.M.Farias. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para inicializar o Slick Slider -->
+    <script>
+      $(document).ready(function(){
+        $('.slick-slider').slick({
+          slidesToShow: 3, // Mostrar 3 imagens ao mesmo tempo
+          slidesToScroll: 1, // Rolar uma imagem por vez
+          autoplay: true, // Ativa rotação automática
+          autoplaySpeed: 3000, // Velocidade da rotação automática (5000ms = 5 segundos)
+          speed: 300, // Velocidade da transição
+          cssEase: 'linear', // Transição contínua
+          infinite: true, // Permite rotação infinita
+          arrows: true, // Exibe setas de navegação
+          dots: true, // Exibe pontos de navegação
+          responsive: [
+            {
+              breakpoint: 768, // Para telas menores (como tablets)
+              settings: {
+                slidesToShow: 2, // Mostrar 2 imagens ao mesmo tempo
+              }
+            },
+            {
+              breakpoint: 480, // Para telas bem pequenas (como celulares)
+              settings: {
+                slidesToShow: 1, // Mostrar 1 imagem por vez
+              }
+            }
+          ]
+        });
+      });
+    </script>
+</body>
+</html>
